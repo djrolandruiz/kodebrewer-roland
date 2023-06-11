@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">KodeBrewer</a>
+      <i class="fas fa-bars" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, My Name is</h3>
+        <h1>Roland</h1>
+        <h3>and I'm a <span class="multiple-text"></span></h3>
+        <p>
+          Welcome to my portfolio website, where I showcase my creative journey
+          and passion for innovation through compelling designs and captivating
+          storytelling.
+        </p>
+        <div class="social-media">
+          <a onclick="window.open('https://www.facebook.com/roland.ruiz.904/');"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a onclick="window.open('https://m.me/roland.ruiz.904')"
+            ><i class="fa-brands fa-facebook-messenger"></i
+          ></a>
+          <a onclick="window.open('viber://add?number=+09916728145');"
+            ><i class="fa-brands fa-viber"></i
+          ></a>
+          <a
+            onclick="window.open('https://www.linkedin.com/in/roland-ruiz-8b4289277/');"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <a onclick="downloadPDF('../documents/CV.pdf')" class="btn"
+          >Download CV</a
+        >
+      </div>
+      <div class="home-img">
+        <img src="./images/profpic.png" alt="" />
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./images/profpic.png" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Web Developer</h3>
+        <p>
+          As a recent graduate of a Fullstack Web Development course in a
+          bootcamp, I have acquired comprehensive knowledge and hands-on
+          experience in a wide range of technologies, including HTML, CSS,
+          JavaScript, Bootstrap, ReactJS, Git, and I am continuously expanding
+          my skills in PHP and Laravel. This intensive training has equipped me
+          with a solid foundation to excel as a web developer.<br /><br />
+
+          Driven by an unwavering passion for the dynamic and ever-evolving
+          field of web development, I possess a discerning eye for design and an
+          innate ability to translate creative concepts into seamlessly
+          interactive user experiences. I firmly believe that effective
+          communication and collaborative teamwork are vital components for
+          success in any project. I am eager to leverage my expertise to
+          contribute to a cohesive team environment, where I can actively
+          participate in building intuitive interfaces, optimizing website
+          performance, and ensuring seamless cross-browser compatibility.<br /><br />
+
+          With my strong technical foundation, passion for excellence, and
+          dedication to creating remarkable web experiences, I am confident in
+          my ability to make valuable contributions to any team. I am eager to
+          bring my skills and enthusiasm to contribute to your organization's
+          success, and I look forward to the opportunity to discuss how my
+          expertise aligns with your company's goals.
+        </p>
+      </div>
+    </section>
+    <!-- Services -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+            expedita.
+          </p>
+        </div>
+        <div class="services-box">
+          <i class="fa-solid fa-paintbrush"></i>
+          <h3>Figma to Web</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+            expedita.
+          </p>
+        </div>
+        <div class="services-box">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h3>Full Stack Web System</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+            expedita.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="./images/rw.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>R&W Consultancy Service</h4>
+            <a
+              onclick="window.open('https://rwconsultancyservice.000webhostapp.com/');"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./images/task.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Task Management System</h4>
+            <a
+              onclick="window.open('https://task-management-system-project.000webhostapp.com');"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./images/todolist.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>To Do List</h4>
+            <a onclick="window.open('https://todolist-daily.netlify.app/');"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./images/expense.png  " alt="" />
+          <div class="portfolio-layer">
+            <h4>Expense Tracker</h4>
+            <a
+              onclick="window.open('https://daily-expense-tracker-app.netlify.app/');"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form action="#" class="form-contact">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" id="fullname" />
+          <input type="email" placeholder="Email Address" id="email" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" id="mobile" />
+          <input type="text" placeholder="Email Subject" id="subject" />
+        </div>
+        <textarea
+          name=""
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+        <input id="submit" type="submit" value="Send" class="btn" />
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Roland Ruiz | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- type js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
