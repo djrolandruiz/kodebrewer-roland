@@ -65,7 +65,7 @@ ScrollReveal().reveal(".home-content p, .about-content", {
 });
 // typed js
 const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer", "Web Developer"],
+  strings: ["Web Developer", "PHP Developer", "Web Design"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
