@@ -199,12 +199,12 @@ span {
   margin: 2rem 0 3rem;
 }
 
-/* Services */
-.services h2 {
+/* Certificates */
+.certificates h2 {
   margin-bottom: 5rem;
 }
 
-.services-container {
+.certificates-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,10 +212,10 @@ span {
   gap: 2rem;
 }
 
-.services-container .services-box {
-  flex: 1 1 30rem;
+.certificates-container .certificates-box {
+  /* flex: 1 1 30rem; */
   background-color: var(--second-bg-color);
-  padding: 3rem 2rem 4rem;
+  padding: 3rem 2rem;
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
@@ -223,21 +223,28 @@ span {
   cursor: pointer;
 }
 
-.services-container .services-box:hover {
+.certificates-container {
+  display: inline-block;
+  margin: 1rem 2rem;
+}
+
+.certificates-container .certificates-box:hover {
   border-color: var(--main-color);
   transform: scale(1.02);
 }
 
-.services-box i {
+.certificates-box img {
   font-size: 7rem;
   color: var(--main-color);
+  width: 500px;
+  height: 300px;
 }
 
-.services-box h3 {
-  font-size: 2.6rem;
+.certificates-box h3 {
+  font-size: 1.8rem;
 }
 
-.services-box p {
+.certificates-box p {
   font-synthesis: 1.6rem;
   margin: 1rem 0 3rem;
 }
@@ -520,5 +527,36 @@ span {
   .footer p {
     text-align: center;
     margin-top: 2rem;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .certificates h2 {
+    margin-bottom: 3rem; /* Adjust spacing for smaller screens */
+  }
+
+  .certificates-container {
+    gap: 1rem; /* Reduce the gap between certificate boxes */
+    margin: 0 1rem; /* Adjust margin for smaller screens */
+  }
+
+  .certificates-box {
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .certificates-box img {
+    font-size: 4rem; /* Reduce font size for the image */
+    width: 100%; /* Make the image width 100% of its container */
+    height: auto; /* Allow the image height to adjust proportionally */
+  }
+
+  .certificates-box h3 {
+    font-size: 1.4rem; /* Reduce font size for smaller screens */
+  }
+
+  .certificates-box p {
+    font-size: 1.4rem; /* Reduce font size for smaller screens */
+    margin: 1rem 0 2rem; /* Adjust margin for smaller screens */
   }
 }
